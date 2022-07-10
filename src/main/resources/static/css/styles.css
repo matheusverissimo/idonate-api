@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffad8a;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+}
+
+footer {
+  background-color: #ffad8a;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-family: "Poppins";
+  text-size: "20px";
+  position: fixed;
+  bottom: 0;
+}
+
+h2 {
+  color: white;
+  font-family: Poppins;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 16px;
+  color: white;
+  padding: 20px;
+  font-family: Poppins;
+  font-weight: lighter;
+}
+
+h4 {
+  color: white;
+  font-family: Poppins;
+  font-weight: lighter;
+  text-shadow: 0.1em 0.1em 0.2em gray;
+  margin-left: 160px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  padding: 50px;
+  line-height: 30px;
+  font-family: Poppins;
+}
+
+.logo {
+  font-family: "Pacifico";
+  font-size: 40px;
+  color: white;
+  line-height: 80px;
+  padding-left: 50px;
+  font-weight: lighter;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+}
+
+.container2 {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.container-list {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.list-logo {
+  background-color: #c5e6a1;
+  width: 120px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.list {
+  background-color: #c5e6a1;
+  width: 800px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.title2 {
+  padding-left: 30px;
+  text-shadow: 0.1em 0.1em 0.2em gray;
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.items {
+  background-color: #ffad8a80;
+  width: 18%;
+  height: 25px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.text-items {
+  font-size: 14px;
+  color: white;
+  font-family: Poppins;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.donation {
+  background-color: #add8e680;
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.site {
+  background-color: #bababa80;
+  width: 80px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.img-perfil {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.resume {
+  width: 200px;
+  height: 300px;
+  background-color: #c5e6a1;
+  border-radius: 20px;
+}
+
+.description {
+  width: 700px;
+  height: 450px;
+  background-color: #c5e6a1;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+.abc {
+  display: flex;
+  margin-top: 25px;
+}
+
+.perfil {
+  padding-left: 180px;
+}
+
+.title {
+  color: #c5e6a1;
+  font-family: Poppins;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.title-list {
+  text-align: center;
+}
+
+.cadastro {
+  width: 600px;
+  height: 400px;
+  background-color: #c5e6a1;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  background-color: #ffad8a80;
+  border: 0;
+  border-radius: 20px;
+  width: 50%;
+  height: 30px;
+  outline: 0;
+  font-family: Poppins;
+  margin-top: 23px;
+  padding-left: 20px;
+  color: white;
+}
+
+input[type="checkbox"] {
+  all: unset;
+  border: 1px solid white;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  font-family: Poppins;
+  box-shadow: 0.1em 0.1em 0.1em gray;
+  margin-left: 160px;
+  margin-top: 10px;
+}
+
+input:checked {
+  background-color: #ffad8a80;
+  border: 1px solid #ffad8a80;
+}
+
+input::placeholder {
+  color: white;
+}
+
+label {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  text-shadow: 0.1em 0.1em 0.2em gray;
+  margin-left: 5px;
+}
+
+.btn-cadastro {
+  background-color: #688e4a;
+  border: 0;
+  border-radius: 20px;
+  width: 20%;
+  height: 30px;
+  outline: 0;
+  font-family: Poppins;
+  margin-top: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.margin {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+input.margin-top {
+  margin-top: 40px;
+}
+
+.flex-w {
+  display: flex;
+  width: 40%;
+}
+
+.flex {
+  display: flex;
+}
+
+input.padding {
+  margin-right: 10px;
+}
+
+.svg {
+  text-align: center;
+  line-height: 90px;
+}
+
+.fundo {
+  width: 100%;
+}
+
+.btn-donation {
+  background-color: #c5e6a1;
+  border: 0;
+  border-radius: 10px;
+  width: 40%;
+  height: 40px;
+  outline: 0;
+  font-family: Poppins;
+  margin-top: 30px;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.1em gray;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 80px;
+  background-color: #c5e6a1;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.img1 {
+  margin-top: 30px;
+  padding-left: 5%;
+}
+
+.img2 {
+  margin-top: 25px;
+  padding-left: 10%;
+}
+
+.img {
+  width: 300px;
+  height: 150px;
+  border: 5px solid #c5e6a1;
+  border-radius: 30px;
+  margin-left: 40px;
+}
+
+.text {
+  color: #c5e6a1;
+  font-size: 22px;
+  font-weight: bold;
+}
