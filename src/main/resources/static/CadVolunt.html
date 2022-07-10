@@ -14,19 +14,20 @@
     <h2 class="title">Cadastro de Voluntário</h2>
     <div class="cadastro">
       <center>
-        <input type="text" placeholder="   Nome completo" />
-        <input type="text" placeholder="   Data de nascimento" />
-        <input type="text" placeholder="   CEP" />
+        <input id="nome" type="text" placeholder="   Nome completo" />
+        <input id="data" type="text" placeholder="   Data de nascimento" />
+        <input id="cpf" type="text" placeholder="   CPF" />
         <div class="flex-w">
-          <input class="padding" type="text" placeholder="   Número" />
-          <input type="text" placeholder="   UF" />
+          <input id="numero" class="padding" type="text" placeholder="   Número" />
+          <input id="uf" type="text" placeholder="   UF" />
         </div>
-        <input type="text" placeholder="   Rua" />
-        <input type="text" placeholder="   Cidade" />
+        <input id="rua" type="text" placeholder="   Rua" />
+        <input id="cidade" type="text" placeholder="   Cidade" />
       </center>
-      <center><button class="btn-cadastro">Cadastrar</button></center>
+      <center><button type="button" onclick="cadastrarVoluntario()" class="btn-cadastro">Cadastrar</button></center>
     </div>
     <div class="container2"></div>
     <footer></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
