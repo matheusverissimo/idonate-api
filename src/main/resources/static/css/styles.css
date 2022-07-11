@@ -208,6 +208,19 @@ input[type="text"] {
   color: white;
 }
 
+input[type="date"] {
+  background-color: #ffad8a80;
+  border: 0;
+  border-radius: 20px;
+  width: 50%;
+  height: 30px;
+  outline: 0;
+  font-family: Poppins;
+  margin-top: 23px;
+  padding-left: 20px;
+  color: white;
+}
+
 input[type="checkbox"] {
   all: unset;
   border: 1px solid white;
