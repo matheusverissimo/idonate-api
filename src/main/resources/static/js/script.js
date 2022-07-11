@@ -1,11 +1,21 @@
 function cadastrar(entidade, body){
-    return fetch("http://localhost:8080/" + entidade, {
+    return fetch("/" + entidade, {
         body: JSON.stringify(body),
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             "Content-Type": 'application/json'
         }
+    })
+}
+
+function atualizar(url, body){
+    return fetch(url, {
+        method: 'PUT',
+        headers: {
+            "Content-Type": 'text/uri-list'
+        },
+        body: body
     })
 }
 
@@ -27,7 +37,7 @@ function cadastrarInstituicao() {
     }).then((data) => console.log(data))
 }
 
-function cadastrarVoluntario(){
+async function cadastrarVoluntario(){
     let nome = document.querySelector('#nome')
     let nasc = document.querySelector('#nasc')
     let cpf = document.querySelector('#cpf')
@@ -36,17 +46,37 @@ function cadastrarVoluntario(){
     let rua = document.querySelector('#rua')
     let cidade = document.querySelector('#cidade')
 
-    cadastrar('voluntarios', {
+    let bodyVolunt = {
         nome: nome.value,
         dataNascimento: nasc.value,
-        cpf: cpf.value,
-        endereco: {
-            uf: uf.value,
-            rua: rua.value,
-            numero: numero.value,
-            cidade: cidade.value
+        cpf: cpf.value
+    }
+
+    let bodyEndereco = {
+        uf: uf.value,
+        rua: rua.value,
+        numero: numero.value,
+        cidade: cidade.value
+    }
+
+    let refVolunt
+    let refEndereco
+
+    cadastrar('voluntarios', bodyVolunt
+    ).then(
+        (data) => data.json()
+    )
+    .then(
+        (data) => {
+            refVolunt = data._links.self.href
+            cadastrar('enderecos', bodyEndereco).then(
+                (data) => data.json()
+            ).then(
+                (data) => {
+                    refEndereco = data._links.self.href
+                    atualizar(refVolunt + '/endereco', refEndereco).then()
+                }
+            )
         }
-    }).then(
-        (data) => console.log(data)
     )
 }

@@ -9,6 +9,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "enderecos", path = "enderecos")
-public interface EnderecoRepository extends JpaRepository <Endereco, String> {
+public interface EnderecoRepository extends JpaRepository <Endereco, Long> {
 
 }
